@@ -1,0 +1,7 @@
+def noOdds(lst):
+	new = []
+	for i in lst:
+	 if i % 2 == 0:
+	 	new.append(i)
+	return new
+	

@@ -1,0 +1,28 @@
+Create a function that takes a list of numbers and returns the following statistics:
+Minimum Value
+Maximum Value
+Sequence Length
+Average Value
+
+
+
+def minMaxLengthAverage(lst):
+	min = lst[0]
+	new = []
+	max = lst[0]
+	sum = 0
+	for i in lst:
+		if i < min:
+			min = i
+	for i in lst:
+		if i > max:
+			max = i
+	length =  len(lst)
+	for i in lst:
+		sum += i
+	prom  = sum / len(lst)
+	new.append(min)
+	new.append(max)
+	new.append(length)
+	new.append(prom)
+	return new

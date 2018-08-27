@@ -1,0 +1,10 @@
+Create a function that takes a list of numbers and returns a list where each number is the sum of itself + all previous numbers in the list.
+
+
+def cumulative_sum(lst):
+	sum = 0
+	new = []
+	for i in lst:
+		sum+= i
+		new.append(sum)
+	return new
